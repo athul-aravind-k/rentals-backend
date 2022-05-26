@@ -1,11 +1,17 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
-require("dotenv").config();
 const mongoose = require("mongoose");
-
+const cors = require("cors");
 const authRoute = require("./routes/auth");
 
 app.use(express.json());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
+
 var mongoDB = process.env.MONGODB_URL;
 
 mongoose.connect(mongoDB, {
@@ -21,4 +27,4 @@ mongoose.connection.on("connected", (err, res) => {
 });
 
 app.listen(3000);
-app.use(authRoute);
+app.use("/api", authRoute);
