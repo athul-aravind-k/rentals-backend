@@ -162,6 +162,7 @@
     "mongodb": "^4.5.0",
     "mongodb-connection-string-url": "^2.5.2",
     "mongoose": "^6.3.4",
+    "mongoose-unique-validator": "^3.0.0",
     "morgan": "^1.9.1",
     "mpath": "^0.9.0",
     "mquery": "^4.0.3",
