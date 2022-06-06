@@ -23,7 +23,7 @@ const register = (req, res, next) => {
       })
       .catch((error) => {
         res.json({
-          message: "some error occurred",
+          ErrorMessage: "some error occurred",
           error: error,
         });
       });
@@ -53,13 +53,13 @@ const login = (req, res, next) => {
           });
         } else {
           res.json({
-            message: "error username or password",
+            errorMessage: "error username or password",
           });
         }
       });
     } else {
       res.json({
-        message: "error username or password",
+        errorMessage: "error username or password",
       });
     }
   });
