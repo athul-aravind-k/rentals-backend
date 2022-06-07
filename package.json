@@ -168,7 +168,6 @@
     "mquery": "^4.0.3",
     "ms": "^2.0.0",
     "negotiator": "^0.6.3",
-    "nodemon": "^2.0.16",
     "nopt": "^1.0.10",
     "normalize-path": "^3.0.0",
     "normalize-url": "^4.5.1",
@@ -279,5 +278,8 @@
   "bugs": {
     "url": "https://bitbucket.org/athularavindk/rentals-backend/issues"
   },
-  "homepage": "https://bitbucket.org/athularavindk/rentals-backend#readme"
+  "homepage": "https://bitbucket.org/athularavindk/rentals-backend#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }
